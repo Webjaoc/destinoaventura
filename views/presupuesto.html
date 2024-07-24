@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+    <link rel="icon" href="../favicon/DA.png" type="image/png">
+    <title>Destino Aventura</title>
+</head>
+<body>
+<!--Comenzamos el Header-->    
+    <header>
+        <div class="titulo">
+            <h1>Destino Aventura</h1>
+        </div>
+    </header>    
+<!--Barra de navegacion-->
+    <nav class="barranav">
+        <ul class="listbarrnav">
+            <li>
+                <a class="enlace" href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a class="enlace" href="galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a class="enlaceActive" href="#">Presupuesto</a>
+            </li>
+            <li>
+                <a class="enlace" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+<!--Formularios-->
+<h1 id="titulo">Formulario de solicitud</h1>
+    <div id="contenedorform">
+        <form action="procesar.php" method="get" class="formulario" id="formulario">
+            <fieldset class="form-control">
+                <legend class="datos">Datos</legend>
+ <!--datos personales-->               
+                <div>
+                    <label class="nombre" for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="valida">
+                    <small>error</small>
+                    <br>
+                </div>
+                
+                <div>
+                    <label class="apellido" for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" class="valida">
+                    <small>error</small>
+                    <br>
+                </div>
+                
+                <div>
+                    <label class="telefono" for="telefono">Telefono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" class="valida">
+                    <small>error</small>
+                    <br>
+                </div>
+                
+                <div>
+                    <label class="correo" for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="valida">
+                    <small>error</small>
+                    <br >
+                </div>              
+ <!--alojamiento-->               
+                <h2 class="presupuesto">Alojamiento</h2>
+                <div class="alojamiento">
+                    <label class="producto" for="producto" >Tipo de alojamiento</label>
+                    
+                    <select  id="producto" name="producto">
+                        <option value="0"> Seleccione  una  opcion </option>
+                        <option value="500">Hotel</option>
+                        <option value="400">Cabaña</option>
+                        <option value="450">Bungalo</option>
+                    </select>
+                    <small>error</small>
+                </div>
+                <br>
+ <!--plazos en meses-->               
+                <div class="meses">
+                    <label class="plazos" for="plazos">Plazos en meses</label>
+                    <input type="number" id="plazos" min="1" max="3" name="plazos" value="1">
+                    <small>error</small>
+                </div>
+                <br>
+ <!--extras -->               
+                <P>Elija los extras para completar su reserva :</P>
+                <br>
+                
+                <div id="extras">
+                    <label class="desayuno" for="desayuno">Desayuno incluido</label>
+                    <input class="extras" type="checkbox" id="desayuno" name="desayuno" value="15">
+                    
+                    <label  for="baño">Baño privado</label>
+                    <input class="extras" type="checkbox" id="baño" name="baño" value="15">
+
+                    <label  for="parking">Parking</label>
+                    <input class="extras" type="checkbox" id="parking" name="parking" value="15">
+
+                    <label  for="cancelacion">Cancelacion gratuita</label>
+                    <input class="extras" type="checkbox" id="cancelacion" name="cancelacion" value="15">
+                </div>
+  <!--precio final-->              
+                <h2 class="tupres">Tu presupuesto es de :</h2>
+                <div class="pTotal">
+                    <label for="total">Precio final :</label>
+                    <input type="text" id="total" name="total">
+                    <p class="euros">euros</p>
+                </div>
+  <!--condiciones-->              
+                <h2 class="aceptar">Aceptación de Condiciones y envio de presupuesto</h2>
+                <div  class="form-control">
+                    <label class="privacidad" for="privacidad">He leido la política de privacidad</label>
+                    <input type="checkbox" id="privacidad" name="privacidad">
+                    <small>error</small>
+                </div>
+                <br >
+  <!--botones-->              
+                <div class="form-control">
+                    <input class="enviarF" id="enviarF" type="submit" value="Enviar Formulario" >
+                    <input class="borrarF" id="borrarF" type="reset" value="Borrar Formulario">
+                </div>
+                    
+            </fieldset>
+        
+        </form>
+    </div>
+   <!--footer-->  
+    <footer class="pie">
+        <div id="pie">
+
+            <div class="copy">
+                <p> &copy; Sol & Mar-2022. Todos los derechos reservados</p>
+            </div>
+
+            <div class="direccion">
+                <p>Av. del Mediterráneo, 20</p>
+                <p>03188, La Mata </p>
+                <p>Alicante, España</p>
+                <p>Tel. 924 252 627</p>
+            </div>
+        
+            <div class="redes">
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">twitter</a></li>
+                </ul>   
+            </div>
+
+        </div>
+    </footer>
+   <!--hacemos los calculos del precio con una funcion--> 
+    <script>
+       (() => {
+
+let sumaTotal = 0;
+
+const tipoPag = document.querySelector("#producto");
+const plazoMes = document.querySelector("#plazos");
+const opciones = document.querySelectorAll("#extras>input");
+const preTotal = document.querySelector("#total");
+
+let suma = () => {
+
+    sumaTotal = parseInt(tipoPag.value);
+
+    switch (plazoMes.value) {
+        case "1":
+            sumaTotal += parseInt(0);
+            break;
+        case "2":
+            sumaTotal += parseInt(50);
+            break;
+        case "3":
+            sumaTotal += parseInt(100);
+            break;
+        default:
+            sumaTotal += parseInt(0);
+    }
+
+    opciones.forEach((element, i) => {
+        if (element.checked) {
+            sumaTotal += parseInt(element.value);
+        }
+    });
+
+    preTotal.value = sumaTotal;
+}
+
+opciones.forEach((element, i) => {
+    element.addEventListener("change", suma, false);
+});
+
+tipoPag.addEventListener("change", suma, false);
+plazoMes.addEventListener("change", suma, false);
+
+})(); 
+    </script>
+<!--cargamos el archivo-->     
+    <script  src="../js/form.js"></script>      
+</body>
+</html>

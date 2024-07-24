@@ -1,0 +1,9 @@
+{
+    "ficha":[
+        {"ciudad":"Alicante", "parametros":{"temperaturamax": "32°","temperaturamin":"21°" }},
+        {"ciudad":"Torrevieja", "parametros":{"temperaturamax": "30°" ,"temperaturamin":"21°" }},
+        {"ciudad":"Orihuela Costa", "parametros":{"temperaturamax": "31°" ,"temperaturamin":"20°" }},
+        {"ciudad":"Benidorm", "parametros":{"temperaturamax": "33°" ,"temperaturamin":"19°" }},
+        {"ciudad":"Denia", "parametros":{"temperaturamax": "30°" ,"temperaturamin":"17°" }}
+    ]
+}

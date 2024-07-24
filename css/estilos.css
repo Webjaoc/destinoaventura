@@ -1,0 +1,554 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/palmeras.jpg);
+    scroll-behavior:smooth;
+    background-attachment: fixed;
+    
+}
+/********Header***********/
+.titulo{
+    width: 100vw;
+    height: 120px;
+    border: 1px solid black;
+    background-color: rgb(214, 154, 75);
+    margin-top: 0px;
+}
+
+.titulo h1{
+    margin-left: 10%;
+    margin: 50px;
+
+}
+/*******Barra Navegacion*******/
+
+.barranav{
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(60, 60, 61);
+    top: 0px;
+    position: relative;
+    position: sticky;
+    z-index: 100;
+}
+
+.listbarrnav{
+    
+    width: 70vw;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.listbarrnav li {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.listbarrnav li a {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: rgb(248, 246, 243);
+    padding-top: 12px;
+    text-align: center;
+    justify-content: center;
+}
+
+.listbarrnav li a.enlaceActive{
+    color:chartreuse
+}
+
+.listbarrnav li a:hover{
+    background: rgb(127, 128, 126);
+    color: rgb(249, 247, 247);
+}
+/***************Pagina de inicio*************/
+#secciones{
+    width: 90%;
+    height: 850px;
+    position: relative;
+    margin: auto;
+}
+.articulo{
+    position: relative;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color:rgba(255,255, 255,0.1);
+}
+.articulo:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid rgb(245, 9, 37);
+    background-color:rgba(58, 57, 57, 0.4);
+    transition: 0.5s;
+    color: white;
+
+}
+.articulo h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.articulo p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.articulo input{
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+#box{
+    width: 60%;
+    height: 350px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+
+
+
+
+/*****************galeria*********************/
+
+#contenedor{
+    width: 900px;
+    height: 600px;
+    border: 3px solid black;
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+}
+#contenedor .sliders{
+    width: 100%;
+    height: 100%;
+}
+#contenedor .sliders img{
+    width: 100%;
+    height: 100%;
+}
+#flechas{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 45%;
+    width: 100%;
+    height: 35px;
+    
+}
+#flechas .sliders{
+    display: flex;
+    justify-content: space-between;
+    width: 45px;
+    height: 35px;
+    border: 2px solid white;
+    background-color:rgba(255,255, 255,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#flechas .sliders:hover{
+    background-color:  rgba(255,255, 255,0.5);
+}
+
+#flechas span{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 35%;
+}
+
+#boton-sliders{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 20px;
+    bottom: 20px;
+    justify-content: center;
+    
+}
+
+#boton-sliders span{
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(243, 240, 240);
+    background-color: rgba(243, 240, 240 , 0.1);
+    margin: 0 3px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#boton-sliders span:hover{
+    background-color: gray;
+}
+
+
+
+
+
+
+/*****************Formulario*****************/
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#contenedorform{
+    position: relative;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(10, 0, 0, 0.2); 
+    border-radius: 20px;
+}
+
+fieldset{
+    background-color: rgba(10, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-top: 30px;
+
+}
+
+.valida{
+    width: 250px;
+    
+}
+
+legend{
+    margin: auto;
+    color: white;
+    font-size: 26px;
+}
+div h2{
+    margin-left: 0auto;
+}
+    
+.nombre{
+    margin-right: 90px;
+    padding-left: 10px;
+    
+
+}
+
+.apellido{
+    margin-right: 80px;
+    padding-left: 10px;
+}
+
+.telefono{
+    padding-left: 10px;
+}
+
+.correo{
+    margin-right: 108px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control div{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.producto{
+    margin-right: 35px;
+    padding-left: 10px;
+}
+
+.form-control div .meses{
+    margin-top: 0px;
+    padding-top: 0;
+    
+}
+
+
+
+.plazos{
+    margin-right: 40px;
+    padding-left: 30px;
+    
+}
+
+p{
+   text-align: center;
+   font-size: 25px;
+}
+
+.desayuno{
+    padding-left: 10px;
+}
+
+.extras{
+    margin-right: 70px;
+    margin-bottom: 20px;
+    
+}
+
+.presupuesto{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tupres{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.preTotal{
+    margin-top: 10px;
+    height: 100px;
+
+}
+
+
+
+
+.pTotal{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.pTotal input{
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    
+}
+
+.pTotal label{
+    font-size: 30px;
+    padding-bottom: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pTotal .euros{
+    font-size: 29px;
+}
+
+.condiciones{
+    margin-top: 15px;
+    height: 260px;
+    margin-top: 20px;
+
+}
+.condiciones div{
+    margin-top: 50px;
+    height: 40px;
+}
+
+.aceptar{
+    text-align: center;
+}
+
+
+.privacidad{
+    padding-left: 300px;
+    
+}
+
+.borrarF{
+    margin-left: 520px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.enviarF{
+    margin-left: 70px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+small{
+    border-radius: 5px;
+    background-color: red;
+    padding: 3px;
+    visibility: hidden  ;
+}
+.form-control .success input{
+    border-color: rgb(44, 45, 44);
+}
+.form-control .error input{
+    border-color: red;
+}
+.form-control .error small{
+    visibility: visible;
+}
+
+.presupuesto .success input{
+    border-color: rgb(44, 45, 44);
+}
+.presupuesto .error input{
+    border-color: red;
+}
+.presupuesto .error small{
+    visibility: visible;
+}
+
+.presupuesto .success select{
+    border-color:rgb(44, 45, 44);
+}
+.presupuesto .error select{
+    border-color: red;
+}
+.presupuesto .error small{
+    visibility: visible;
+}
+
+
+
+/******************contacto*****************/
+
+.direccion{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.direccion p{
+    font-size: 20px;
+}
+ #map{
+    position: relative;
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+}
+.descripcion{
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    background-color: rgb(99, 96, 96);
+}
+
+
+
+/******************footer*******************/
+.pie{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    
+
+   
+
+}
+
+.pie #pie{
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+.pie #pie .copy{
+    width: 33%;
+    color: white;
+    text-align: center;
+    padding: 5px auto;
+}
+#pie .copy p{
+    font-size: 16px;
+    margin-top:50px ;
+}
+#pie .direccion{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+    
+}
+#pie .direccion p{
+    width: 100%;
+    color:white;
+    line-height: 20px;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+#pie .redes{
+    width: 33%;
+    
+}
+.redes ul{
+    list-style: none;
+}
+.redes ul li a{
+    font-size: 20px;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 35px;
+    margin-top: 5px;
+    
+
+}
+
+
+
+
+
+
