@@ -92,17 +92,22 @@
                 <br>
                 
                 <div id="extras">
-                    <label class="desayuno" for="desayuno">Desayuno incluido</label>
-                    <input class="extras" type="checkbox" id="desayuno" name="desayuno" value="15">
-                    
-                    <label  for="baño">Baño privado</label>
-                    <input class="extras" type="checkbox" id="baño" name="baño" value="15">
-
-                    <label  for="parking">Parking</label>
-                    <input class="extras" type="checkbox" id="parking" name="parking" value="15">
-
-                    <label  for="cancelacion">Cancelacion gratuita</label>
-                    <input class="extras" type="checkbox" id="cancelacion" name="cancelacion" value="15">
+                    <div class="desayuno">
+                        <label class="desayuno" for="desayuno">Desayuno incluido</label>
+                        <input class="extras" type="checkbox" id="desayuno" name="desayuno" value="15">
+                    </div>
+                    <div class="banio">
+                        <label  for="baño">Baño privado</label>
+                        <input class="extras" type="checkbox" id="baño" name="baño" value="15">
+                    </div>
+                    <div class="parking">
+                        <label  for="parking">Parking</label>
+                        <input class="extras" type="checkbox" id="parking" name="parking" value="15">
+                    </div>
+                    <div class="cancelar">
+                        <label  for="cancelacion">Cancelacion gratuita</label>
+                        <input class="extras" type="checkbox" id="cancelacion" name="cancelacion" value="15">
+                    </div>
                 </div>
   <!--precio final-->              
                 <h2 class="tupres">Tu presupuesto es de :</h2>
@@ -113,14 +118,14 @@
                 </div>
   <!--condiciones-->              
                 <h2 class="aceptar">Aceptación de Condiciones y envio de presupuesto</h2>
-                <div  class="form-control">
+                <div  class="form-control" id="politic">
                     <label class="privacidad" for="privacidad">He leido la política de privacidad</label>
                     <input type="checkbox" id="privacidad" name="privacidad">
                     <small>error</small>
                 </div>
                 <br >
   <!--botones-->              
-                <div class="form-control">
+                <div class="form-control" id="btn">
                     <input class="enviarF" id="enviarF" type="submit" value="Enviar Formulario" >
                     <input class="borrarF" id="borrarF" type="reset" value="Borrar Formulario">
                 </div>
