@@ -555,7 +555,7 @@ small{
     margin-top: 5px;
 }
 
-@media   (max-width: 760px) {
+@media   (max-width: 800px) {
     header{
         width: 100%;
     }
@@ -660,7 +660,7 @@ small{
     }
     #btn input{
         width: 150px;
-        margin-left: opx;
+        margin-left: 0px;
     }
     #map{
         width: 100%;
