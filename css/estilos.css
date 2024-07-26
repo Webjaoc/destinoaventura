@@ -15,7 +15,7 @@ header{
     width: 100%;
 }
 .titulo{
-    width: 100vw;
+    width: 100%;
     height: 120px;
     border: 1px solid black;
     background-color: rgb(214, 154, 75);
@@ -235,7 +235,7 @@ nav{
 
 #contenedorform{
     position: relative;
-    width: 900px;
+    width: 60%;
    
     margin: 0 auto;
     font-size: 18px;
@@ -555,9 +555,12 @@ small{
     margin-top: 5px;
 }
 
-@media   (max-width: 800px) {
+@media   (max-width: 1000px) {
     header{
         width: 100%;
+    }
+    .titulo{
+       width:100% ; 
     }
     .listbarrnav{
         width: 100%;
