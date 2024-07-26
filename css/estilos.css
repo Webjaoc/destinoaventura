@@ -11,6 +11,9 @@ body{
     
 }
 /********Header***********/
+header{
+    width: 100%;
+}
 .titulo{
     width: 100vw;
     height: 120px;
@@ -79,6 +82,7 @@ nav{
     color: rgb(249, 247, 247);
 }
 /***************Pagina de inicio*************/
+
 #secciones{
     width: 90%;
     
@@ -552,6 +556,9 @@ small{
 }
 
 @media   (max-width: 760px) {
+    header{
+        width: 100%;
+    }
     .listbarrnav{
         width: 100%;
         display: flex;
