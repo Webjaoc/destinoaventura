@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="ES">
+    <meta name="description" content="Destino aventura a la carta es una empresa que te resuelve de manera integral
+        todo aquello que nesecitas para disfrutar al maximo de tus vacaciones.">
+    <meta name="Author" content="Destino vacacional a la carta">
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+    <link rel="icon" href="../favicon/DA.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" >
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <title>Destino Aventura</title>
+</head>
+<body>
+    <!--Comenzamos el Header-->    
+    <header>
+        <div class="titulo">
+            <h1>Destino Aventura</h1>
+        </div>
+    </header>    
+    <!--Barra de navegacion-->
+    <nav class="barranav">
+        <ul class="listbarrnav">
+            <li>
+                <a class="enlace" href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a class="enlace" href="galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a class="enlace" href="presupuesto.html">Presupuesto</a>
+            </li>
+            <li>
+                <a class="enlaceActive" href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!--mapa-->
+    <div class="direccion">
+        <p>Av. del Mediterráneo 20, 03188, La Mata Alicante, España</p> 
+    </div>
+
+    <div id="map"></div>
+    
+    <div id="mensaje">
+        <p>Te ofrecemos la mejor relacion calidad precio para hacer tus 
+            vacaciones de ensueño , realidad.</p>
+    </div>
+    
+     <!--footer-->
+
+    <footer class="pie">
+        <div id="pie">
+
+            <div class="copy">
+                <p> &copy; Sol & Mar-2022. Todos los derechos reservados</p>
+            </div>
+
+            <div class="direccion">
+                <p>Av. del Mediterráneo, XX 03188, La Mata Alicante, España. Tel. XXX XXX XXX</p>
+            </div>
+        
+            <div class="redes">
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener">twitter</a></li>
+                </ul>   
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js" ></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script  src="../js/mapa.js"></script>     
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="ES"> 
+    <meta name="description" content="Destino aventura a la carta es una empresa que te resuelve de manera integral
+        todo aquello que nesecitas para disfrutar al maximo de tus vacaciones.">
+    <meta name="Author" content="Destino vacacional a la carta">
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+    <link rel="icon" href="./favicon/DA.png" type="image/png">
+    <title>Destino Aventura</title>
+</head>
+<body>
+<!--Comenzamos-->    
+    <header>
+        <div class="titulo">
+            <h1>Destino Aventura</h1>
+        </div>
+    </header>    
+<!--Barra navegacion-->
+    
+    <nav class="barranav">
+        <ul class="listbarrnav">
+            <li>
+                <a class="enlaceActive" href="#">Inicio</a>
+            </li>
+            <li>
+                <a class="enlace" href="./views/galeria.html">Galeria</a>
+            </li>
+            <li>
+                <a class="enlace" href="./views/presupuesto.html">Presupuesto</a>
+            </li>
+             <li>
+                <a class="enlace" href="./views/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    
+<!--secciones-->
+    <div id="secciones">
+        <section class="articulo">
+            <h2>Este es tu momento.</h2>
+            <p>
+                Es hora de disfrutar de unas merecidas vacaciones , descanzo merecido o una oportunidad de darte ese caprichito  que tanto 
+                deseabas.
+            </p>
+
+        </section>
+
+        <section class="articulo" >
+            <h2>Tenemos lo que estas buscando.</h2>
+            <p>
+                Aqui tenemos la oferta mas amplia del mercado para que nuestros clientes tengan a la mano un abanico amplio de 
+                posibilidades.
+            </p>
+
+        </section>
+
+        <section class="articulo">
+            <h2>No te preocupes por nada.</h2>
+            <p>
+                Ademas te brindamos el mejor y mas actualizado estado del tiempo para que programes tus actividades con antelacion.
+            </p>
+        </section>
+
+<!--agreganos un input-->    
+        <section class="articulo">
+            <h2>Descubre como estara el clima:</h2>
+            <p>Has click en el boton:</p>
+            <input type="button" value="Click" id="cargar">
+        </section>
+        
+
+    </div>
+<!--creamos la caja donde se carga el Json-->
+    <div id="box">No dejes de visitar nuestras redes sociales</div> 
+<!--footer-->           
+    <footer class="pie">
+            <div id="pie">
+    
+                <div class="copy">
+                    <p> &copy; Sol & Mar-2022. Todos los derechos reservados</p>
+                </div>
+    
+                <div class="direccion">
+                    <p>Av. del Mediterráneo, xx 03188, La Mata Alicante, España Tel. XXX XXX XXX
+                    </p>
+                </div>
+            
+                <div class="redes">
+                    <ul>
+                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.twitter.com" target="_blank" rel="noopener">twitter</a></li>
+                    </ul>   
+                </div>
+    
+            </div>
+        </footer>
+<!--cargamos los script-->     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./js/json.js"></script>       
+</body>
+</html>
